@@ -1,10 +1,10 @@
 # PyOps - a python program to make a DevOps engineer's life easier
 
-### 1) clone this repo
+### 1) Clone this repo
 ``` sh
 git clone https://github.com/Mozart4242/pyops.git
 ```
-### 2) install requirments
+### 2) Install requirments
 ```sh
 pip3 install -r requirments.txt
 ```
