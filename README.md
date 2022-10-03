@@ -1,4 +1,4 @@
-# PyOps - a python program to make a DevOps engineer life easier
+# PyOps - a python program to make a DevOps engineer's life easier
 
 ### 1) clone this repo
 ``` sh
