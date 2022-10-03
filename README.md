@@ -12,3 +12,13 @@ pip3 install -r requirments.txt
 ```sh
 python3 main.py
 ```
+
+## What it does?
+- Installs tools:
+    - Terraform
+    - Git
+    - AWS CLI
+- Auto config:
+    - ssh keys
+    - aws config file
+    
