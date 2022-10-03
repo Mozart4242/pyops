@@ -2,13 +2,14 @@ import pyfiglet
 import settings
 import time
 from progressbar import progressbar
-from git.git import *
-from packages.install import *
+from modules import git, terraform, install
+from stringcolor import cs
+
 
 menu_options = {
     1: 'Get my system ready 🛠',
     2: 'Git',
-    3: 'AWS',
+    3: 'Terraform',
     9: 'Settings',
     0: 'Exit '
 }
@@ -17,7 +18,7 @@ menu_options = {
 def print_bar():
     for i in progressbar(range(100)):
         time.sleep(0.01)
-    input("Press any button to get back to the main menu >")
+    input(cs("💲 Press any button to get back to the main menu >").bold())
 
 
 def print_menu():
@@ -28,20 +29,20 @@ def print_menu():
 
 
 def option1():
-    install()
-    input("💲 Press any button to get back to the main menu >")
+    install.install()
+    input(cs("💲 Press any button to get back to the main menu >").bold())
 
 
 def option2():
-    pass
-    input("💲 Press any button to get back to the main menu >")
+    git.ssh_key_generate()
+    input(cs("💲 Press any button to get back to the main menu >").bold())
 
 
 def option3():
     pass
-    input("Press any button to get back to the main menu >")
+    input(cs("💲 Press any button to get back to the main menu >").bold())
 
 
 def option9():
     settings.update_config()
-    input("Press any button to get back to the main menu >")
+    input(cs("💲 Press any button to get back to the main menu >").bold())

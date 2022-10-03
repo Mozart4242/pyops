@@ -14,8 +14,7 @@ def update_config():
     USERINFO_password = str(input("PyOps password: "))
     hash_password = hashlib.md5(USERINFO_password.encode())
     hash_password = hash_password.hexdigest()
-    GIT_username = str(input("Github Username: "))
-    GIT_password = str(input("Github Password: "))
+    GIT_username = str(input("Github Username (Email): "))
     AWS_acc_key_id = str(input("AWS Access Key ID: "))
     AWS_secret_acc_key = str(input("AWS Secret Access Key: "))
     AWS_reg = str(input("AWS Default region: (default: us-east-1):")
@@ -26,7 +25,6 @@ def update_config():
     userinfo["username"] = USERINFO_username
     userinfo["password"] = hash_password
     git["username"] = GIT_username
-    git["password"] = GIT_password
     aws["Access-Key-ID"] = AWS_acc_key_id
     aws["Secret-Access-Key"] = AWS_secret_acc_key
     aws["Default-region"] = AWS_reg
