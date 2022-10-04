@@ -22,5 +22,6 @@ python3 main.py
     - ssh keys
     - aws config file
 
-## Author
-Mozart4242
+## Contributors by:
+
+<a><img src="https://contrib.rocks/image?repo=devopshobbies/pyops"></a>
