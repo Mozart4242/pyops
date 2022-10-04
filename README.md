@@ -1,5 +1,7 @@
 # PyOps - a python program to make a DevOps engineer's life easier
 
+PyOps is a framework to help you deal with Devops technologies as fast as possible. it is designed to be your assistant.
+
 ### 1) Clone this repo
 ``` sh
 git clone https://github.com/devopshobbies/pyops
@@ -19,7 +21,7 @@ python3 main.py
     - Git
     - AWS CLI
 - Auto config:
-    - ssh keys
+    - ssh keys (to add them in your Github or Gitlab)
     - aws config file
 
 ## Contributors by:
