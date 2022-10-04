@@ -21,4 +21,6 @@ python3 main.py
 - Auto config:
     - ssh keys
     - aws config file
-    
+
+### Author
+Mozart4242

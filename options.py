@@ -18,7 +18,7 @@ menu_options = {
 def print_bar():
     for i in progressbar(range(100)):
         time.sleep(0.01)
-    input(cs("💲 Press any button to get back to the main menu >").bold())
+    input(cs("💲 Press enter to get back to the main menu >", "blue").bold())
 
 
 def print_menu():
@@ -30,19 +30,20 @@ def print_menu():
 
 def option1():
     install.install()
-    input(cs("💲 Press any button to get back to the main menu >").bold())
+    input(cs("💲 Press enter to get back to the main menu >", "blue").bold())
 
 
 def option2():
     git.ssh_key_generate()
-    input(cs("💲 Press any button to get back to the main menu >").bold())
+    input(cs("💲 Press enter to get back to the main menu >", "blue").bold())
 
 
 def option3():
-    pass
-    input(cs("💲 Press any button to get back to the main menu >").bold())
+    terraform.menu()
+    
+    input(cs("💲 Press enter to get back to the main menu >", "blue").bold())
 
 
 def option9():
     settings.update_config()
-    input(cs("💲 Press any button to get back to the main menu >").bold())
+    input(cs("💲 Press enter to get back to the main menu >", "blue").bold())
