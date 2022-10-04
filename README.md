@@ -2,7 +2,7 @@
 
 ### 1) Clone this repo
 ``` sh
-git clone https://github.com/Mozart4242/pyops.git
+git clone https://github.com/devopshobbies/pyops
 ```
 ### 2) Install requirments
 ```sh
@@ -25,4 +25,3 @@ python3 main.py
 ## Contributors by:
 
 <a><img src="https://contrib.rocks/image?repo=devopshobbies/pyops"></a>
-
