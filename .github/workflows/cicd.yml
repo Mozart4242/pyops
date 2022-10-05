@@ -26,14 +26,13 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip3 install -r requirements.txt
+          
+      - name: Test with pytest
+        run: |
           pip3 install pytest
-          
-      - name: Run test suite
-        uses: xoviat/actions-pytest@0.1-alpha2
-        with:
-        # Arguments for the pytest command
-            args: tests/unit-test.py
-          
+          pip3 install pytest-cov
+          pytest ./tests/unit-test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+
   release:
         needs: test
         runs-on: ubuntu-latest
