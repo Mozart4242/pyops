@@ -14,6 +14,10 @@ pip3 install -r requirments.txt
 ```sh
 python3 main.py
 ```
+### 4) Login
+user: admin
+password: admin
+
 
 ## What it does?
 - Installs tools:
