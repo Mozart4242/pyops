@@ -29,8 +29,10 @@ jobs:
           pip3 install pytest
           
       - name: Run test suite
-        run: |
-          pytest tests/unit-test.py
+        uses: xoviat/actions-pytest@0.1-alpha2
+        with:
+        # Arguments for the pytest command
+            args: tests/unit-test.py
           
   release:
         needs: test
