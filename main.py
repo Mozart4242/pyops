@@ -1,9 +1,7 @@
-import options, auth, os
+import options
+import auth
+import os
 
-
-priv = os.getuid()
-if priv != 0:
-    raise Exception("Please Run the program as root")
 
 logged_in = auth.auth()
 
@@ -17,6 +15,8 @@ while logged_in is True:
             options.option2()
         elif option == 3:
             options.option3()
+        elif option == 4:
+            options.option4()
         elif option == 9:
             options.option9()
         elif option == 0:
