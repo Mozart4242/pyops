@@ -30,9 +30,8 @@ jobs:
       - name: Test with pytest
         run: |
           pip3 install pytest
-          pip3 install pytest-cov
-          pytest ./tests/unit-test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-
+          pytest unit-test.py
+          
   release:
         needs: test
         runs-on: ubuntu-latest
