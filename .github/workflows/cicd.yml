@@ -27,7 +27,7 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install -r requirements.txt
           
-      - name: Run test suite
+      - name: Test with pytest
         run: |
           pip3 install pytest
           pytest unit-test.py
