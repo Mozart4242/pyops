@@ -24,6 +24,6 @@ python3 main.py
     - ssh keys (to add them in your Github or Gitlab)
     - aws config file
 
-## Contributors by:
+## Contributors:
 
 <a><img src="https://contrib.rocks/image?repo=devopshobbies/pyops"></a>

@@ -7,21 +7,32 @@ on:
             - "+([0-9])?(.{+([0-9]),x}).x"
             - master
 
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - run: echo build
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
 
-    test:
-        needs: build
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - run: echo Test
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
 
-    release:
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+          
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install -r requirements.txt
+          pip3 install pytest
+          
+      - name: Run test suite
+        run: |
+          pytest tests/unit-test.py
+          
+  release:
         needs: test
         runs-on: ubuntu-latest
         if: github.event_name == 'push'
