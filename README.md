@@ -1,4 +1,5 @@
-# PyOps - a python program to make a DevOps engineer's life easier
+# PyOps
+## A python program to make a DevOps engineer's life easier
 
 PyOps is a framework to help you deal with Devops technologies as fast as possible. it is designed to be your assistant.
 
