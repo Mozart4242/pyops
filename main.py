@@ -1,6 +1,5 @@
 import options
 import auth
-import os
 
 
 logged_in = auth.auth()
