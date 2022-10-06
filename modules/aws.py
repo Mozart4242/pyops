@@ -11,12 +11,12 @@ def create_file():
     secret_access_key = aws["secret-access-key"]
     default_region = aws["default-region"]
     default_output = aws["default-output"]
-    USER = os.getenv("USER")
-    Path(f'/home/{USER}/.aws/').mkdir(parents=True, exist_ok=True)
-    Path(f'/home/{USER}/.aws/credentials').touch(mode=0o666, exist_ok=True)
-    Path(f'/home/{USER}/.aws/config').touch(mode=0o666, exist_ok=True)
-    p_credentials = Path(f'/home/{USER}/.aws/credentials')
-    p_config = Path(f'/home/{USER}/.aws/config')
+    OS_USER = os.getenv("USER")
+    Path(f'/home/{OS_USER}/.aws/').mkdir(parents=True, exist_ok=True)
+    Path(f'/home/{OS_USER}/.aws/credentials').touch(mode=0o666, exist_ok=True)
+    Path(f'/home/{OS_USER}/.aws/config').touch(mode=0o666, exist_ok=True)
+    p_credentials = Path(f'/home/{OS_USER}/.aws/credentials')
+    p_config = Path(f'/home/{OS_USER}/.aws/config')
 
     p_credentials_text = f"[default]\naws_access_key_id={access_key_id}\naws_secret_access_key={secret_access_key}\n"
 
