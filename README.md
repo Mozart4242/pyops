@@ -11,7 +11,7 @@ git clone https://github.com/devopshobbies/pyops
 ```
 ### 2) Install requirments
 ```sh
-pip3 install -r requirments.txt
+pip3 install -r requirements.txt
 ```
 ### 3) Run the application
 ```sh
