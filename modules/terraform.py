@@ -1,7 +1,8 @@
 from configparser import ConfigParser
 from progressbar import progressbar
-import os
 from stringcolor import cs
+import terraform
+
 
 def menu():
     menu_options = {
@@ -11,28 +12,17 @@ def menu():
     }
     print("Choose a resource to configure:")
     for key in menu_options.keys():
-        print("|Terraform|",key, '->', menu_options[key])
-        
+        print("|Terraform|", key, '->', menu_options[key])
+
     try:
         option = int(input('📌 Enter your choice: '))
         if option == 1:
-            docker()
+            terraform.docker()
         elif option == 2:
-            kubernetes()
+            pass
         elif option == 3:
-            aws()
+            pass
         else:
             print('❗ Invalid option. Please enter a valid number ❗')
     except ValueError:
         print("❗ Invalid option. Please enter a valid number ❗")
-
-
-    
-def docker():
-    pass
-
-def kubernetes():
-    pass
-
-def aws():
-    pass
