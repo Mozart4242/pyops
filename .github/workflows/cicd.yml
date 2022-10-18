@@ -43,7 +43,7 @@ jobs:
               with:
                   node-version: 17
 
-            - run: cp .github/.releaserc.yml .
+            - run: cp .github/.releaserc.json .
             - run: npm i -g semantic-release @semantic-release/changelog @semantic-release/git
             - run: semantic-release
               env:
