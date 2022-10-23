@@ -19,9 +19,9 @@ def menu():
         if option == 1:
             terraform.docker()
         elif option == 2:
-            pass
+            print("In progress")
         elif option == 3:
-            pass
+            print("In progress")
         else:
             print('❗ Invalid option. Please enter a valid number ❗')
     except ValueError:
