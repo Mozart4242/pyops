@@ -6,5 +6,5 @@ def test():
     if x:
         return True
     else:
-        print("False")
+        print("Falsee")
         return False
