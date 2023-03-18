@@ -6,9 +6,9 @@ on:
         branches:
             - "+([0-9])?(.{+([0-9]),x}).x"
             - master
-        paths-ignore:
-            - '**/README.md'
-            - '**/.github/**'
+#        paths-ignore:
+#            - '**/README.md'
+#            - '**/.github/**'
 
 
 jobs:
